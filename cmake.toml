@@ -1,0 +1,26 @@
+# Reference: https://build-cpp.github.io/cmkr/cmake-toml
+[project]
+name = "sc"
+
+# Arch Linux: sudo pacman -S --needed boost sdl12-compat
+
+[find-package.Boost]
+required = true
+components = ["thread", "chrono"]
+
+[find-package.SDL]
+required = true
+
+[target.server]
+type = "executable"
+include-directories = ["include"]
+sources = ["src/server/**.cpp"]
+compile-features = ["cxx_std_14"]
+link-libraries = ["Boost::thread", "Boost::chrono", "SDL::SDL"]
+
+[target.client]
+type = "executable"
+include-directories = ["include"]
+sources = ["src/client/**.cpp"]
+compile-features = ["cxx_std_14"]
+link-libraries = ["Boost::thread", "Boost::chrono"]

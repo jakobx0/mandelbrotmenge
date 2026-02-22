@@ -1,0 +1,12 @@
+# Build directories
+/build/
+/build*/
+/cmake-build*/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/install_manifest.txt
+**/compile_commands.json
+
+# IDE files
+CMakeLists.txt.user
