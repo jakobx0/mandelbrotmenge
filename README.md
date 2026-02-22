@@ -131,7 +131,3 @@ Ensure the server is already running and `HOST`/`PORT` match.
 - UDP is unreliable by design (packet loss is possible).
 - No authentication/encryption in network communication.
 - Rendering protocol is simple and intended for local/trusted environments.
-
-## License
-
-No license file is currently included. Add a `LICENSE` file before publishing for public reuse.
