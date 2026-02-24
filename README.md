@@ -37,6 +37,15 @@ The renderer uses a job-based flow:
 4. Clients send finished pixels back to the server.
 5. The server updates the SDL surface incrementally.
 
+## Detailed Documentation
+
+For a complete deep dive (German), see:
+
+- `docs/README.md` (documentation index)
+- `docs/DEEP_DIVE_DE.md` (architecture, data flow, thread model, Mandelbrot math, code mapping)
+- `docs/PROTOKOLL_DE.md` (exact UDP packet layouts and protocol behavior)
+- `docs/CODE_MAP_DE.md` (function-by-function reference of the codebase)
+
 ## Tech Stack
 
 - C++14

@@ -255,7 +255,7 @@ int main(int argc, char** argv) {
                 client->send(buffer);
                 working.unlock();
             }
-            boost::this_thread::sleep_for(boost::chrono::milliseconds(90));
+            boost::this_thread::sleep_for(boost::chrono::milliseconds(150));
         }
     });
     try {
