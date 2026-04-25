@@ -148,7 +148,7 @@ int HSVToRGB(float h, float s, float v, float& r, float& g, float& b)
 
 void calc_chunk(const std::shared_ptr<udp_client>& client, int x0, int y0, int chunk_height, int width, int height ,float min_x, float min_y, float zoom, int max_iterations, int anti_aliasing){
     std::vector<Pixel> pixels;
-    const int max_chunk = 1200;
+    const int max_chunk = 900;
     int pixel_count = 0;
 
     // calculation over min and max
@@ -255,7 +255,7 @@ int main(int argc, char** argv) {
                 client->send(buffer);
                 working.unlock();
             }
-            boost::this_thread::sleep_for(boost::chrono::milliseconds(150));
+            boost::this_thread::sleep_for(boost::chrono::milliseconds(50));
         }
     });
     try {
