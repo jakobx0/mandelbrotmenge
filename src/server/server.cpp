@@ -148,7 +148,7 @@ int main(int argc, char** argv) {
             break;
         }
         if(need_to_redraw) {
-            const int chunk_height = 8; 
+            const int chunk_height = 8;
             to_generate.clear();
             for (int i = 0; i < height; i += chunk_height) {
                 to_generate.push_back({
