@@ -31,11 +31,11 @@ It is a practical combination of math, networking, and systems programming in mo
 
 The renderer uses a job-based flow:
 
-1. The server splits the image into horizontal chunks.
-2. Clients ask for work via UDP.
-3. Clients compute pixel colors for their chunk.
-4. Clients send finished pixels back to the server.
-5. The server updates the SDL surface incrementally.
+- The server splits the image into horizontal chunks
+- Clients ask for work via UDP
+- Clients compute pixel colors for their chunk
+- Clients send finished pixels back to the server
+- The server updates the SDL surface incrementally
 
 ## Detailed Documentation
 
